@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "last_updated": "2025-12-23T17:45:30Z",
+  "last_updated": "2025-12-23T17:57:28Z",
   "apps": [
     {
       "id": "466238fd5959",
@@ -237,35 +237,6 @@
       "apk_url": "https://github.com/DevStudio2k25/devstudio/releases/download/v1.1.1/app-arm64-v8a-release.apk",
       "apk_size": 26413453,
       "apk_name": "app-arm64-v8a-release.apk"
-    },
-    {
-      "id": "ffbe69fbdbcf",
-      "package_name": "com.devstudio2k25.devstudioapps",
-      "app_name": "DevAi",
-      "repository": "DevStudioApps",
-      "repository_url": "https://github.com/DevStudio2k25/DevStudioApps",
-      "tag": "v.1.0.1",
-      "version": ".1.0.1",
-      "build_number": 1,
-      "description": "Release v.1.0.1 from DevStudioApps",
-      "release_notes": "",
-      "release_date": "2025-07-16T13:23:01Z",
-      "icon_url": null,
-      "channel": "stable",
-      "is_beta": false,
-      "downloads": [
-        {
-          "platform": "android",
-          "type": "apk",
-          "arch": null,
-          "url": "https://github.com/DevStudio2k25/DevStudioApps/releases/download/v.1.0.1/DevAi.apk",
-          "filename": "DevAi.apk",
-          "size": 30813280
-        }
-      ],
-      "apk_url": "https://github.com/DevStudio2k25/DevStudioApps/releases/download/v.1.0.1/DevAi.apk",
-      "apk_size": 30813280,
-      "apk_name": "DevAi.apk"
     }
   ]
 }
