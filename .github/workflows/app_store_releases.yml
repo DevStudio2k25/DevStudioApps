@@ -1,0 +1,209 @@
+name: App Store Releases Generator
+
+on:
+  release:
+    types: [published]
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  
+jobs:
+  generate-releases:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      
+      - name: Generate releases.json
+        env:
+          GH_TOKEN: ${{ secrets.APP_STORE_PAT || github.token }}
+        run: |
+          set -e
+          
+          echo "🚀 Starting App Store releases generation..."
+          
+          OWNER="${{ github.repository_owner }}"
+          echo "📦 Owner: $OWNER"
+          
+          # Create temp file for apps
+          > /tmp/apps.json
+          
+          # Get all repos
+          REPOS=$(gh api "/users/$OWNER/repos?per_page=100&type=all" --jq '.[].name' 2>/dev/null || \
+                  gh api "/orgs/$OWNER/repos?per_page=100&type=all" --jq '.[].name' 2>/dev/null || echo "")
+          
+          if [ -z "$REPOS" ]; then
+            echo "❌ No repositories found"
+            echo '{"version": 3, "generated_at": "'$(date -u +"%Y-%m-%dT%H:%M:%SZ")'", "apps": []}' > releases.json
+            exit 0
+          fi
+          
+          TOTAL=0
+          
+          for REPO in $REPOS; do
+            echo ""
+            echo "🔍 $OWNER/$REPO"
+            
+            # Get ONLY LATEST release (first one)
+            RELEASE=$(gh api "/repos/$OWNER/$REPO/releases/latest" 2>/dev/null || echo "{}")
+            
+            TAG=$(echo "$RELEASE" | jq -r '.tag_name // ""')
+            [ -z "$TAG" ] || [ "$TAG" = "null" ] && continue
+            
+            echo "  📋 Latest: $TAG"
+              
+              # Get downloadable assets
+              ASSETS=$(echo "$RELEASE" | jq '[.assets[] | select(.name | test("\\.(apk|aab|exe|msi|msix|dmg|pkg|appimage|deb|rpm|zip|tar\\.gz|ipa)$"; "i"))]')
+              ASSET_COUNT=$(echo "$ASSETS" | jq 'length')
+              
+              [ "$ASSET_COUNT" = "0" ] && continue
+              
+              echo "    📦 $TAG: $ASSET_COUNT files"
+              
+              # Build downloads with ALL assets
+              DOWNLOADS=$(echo "$ASSETS" | jq '[.[] | {
+                platform: (
+                  if (.name | test("\\.apk$"; "i")) then "android"
+                  elif (.name | test("\\.aab$"; "i")) then "android"
+                  elif (.name | test("\\.exe$"; "i")) then "windows"
+                  elif (.name | test("\\.msi$"; "i")) then "windows"
+                  elif (.name | test("\\.msix$"; "i")) then "windows"
+                  elif (.name | test("\\.dmg$"; "i")) then "macos"
+                  elif (.name | test("\\.pkg$"; "i")) then "macos"
+                  elif (.name | test("\\.appimage$"; "i")) then "linux"
+                  elif (.name | test("\\.deb$"; "i")) then "linux"
+                  elif (.name | test("\\.rpm$"; "i")) then "linux"
+                  elif (.name | test("\\.ipa$"; "i")) then "ios"
+                  elif (.name | test("linux.*\\.zip$"; "i")) then "linux"
+                  elif (.name | test("windows.*\\.zip$"; "i")) then "windows"
+                  elif (.name | test("\\.tar\\.gz$"; "i")) then "linux"
+                  else "other"
+                  end
+                ),
+                type: (
+                  .name | capture("(?<ext>\\.[^.]+)$").ext[1:] | ascii_downcase
+                ),
+                arch: (
+                  if (.name | test("arm64|arm64-v8a"; "i")) then "arm64"
+                  elif (.name | test("armeabi|arm32|armv7"; "i")) then "arm32"
+                  elif (.name | test("x86_64|x64"; "i")) then "x64"
+                  elif (.name | test("[^a-z]x86[^_]"; "i")) then "x86"
+                  elif (.name | test("universal"; "i")) then "universal"
+                  else null
+                  end
+                ),
+                url: .browser_download_url,
+                filename: .name,
+                size: .size
+              }]')
+              
+              # Release info
+              VERSION=$(echo "$TAG" | sed 's/^v//')
+              BUILD=$(echo "$TAG" | grep -oP '\+\K[0-9]+' || echo "1")
+              [ -z "$BUILD" ] && BUILD="1"
+              
+              RELEASE_NAME=$(echo "$RELEASE" | jq -r '.name // ""')
+              BODY=$(echo "$RELEASE" | jq -r '.body // ""')
+              PUBLISHED=$(echo "$RELEASE" | jq -r '.published_at // ""')
+              PRERELEASE=$(echo "$RELEASE" | jq -r '.prerelease // false')
+              
+              # App name
+              APP_NAME="$REPO"
+              if [ -n "$RELEASE_NAME" ] && [ "$RELEASE_NAME" != "null" ]; then
+                CLEAN_NAME=$(echo "$RELEASE_NAME" | sed -E 's/[vV]?[0-9]+\.[0-9]+.*//' | xargs)
+                [ -n "$CLEAN_NAME" ] && APP_NAME="$CLEAN_NAME"
+              fi
+              
+              CHANNEL="stable"
+              [ "$PRERELEASE" = "true" ] && CHANNEL="beta"
+              echo "$TAG" | grep -qiE "beta|alpha|rc" && CHANNEL="beta"
+              
+              PKG="com.$(echo "$OWNER" | tr '[:upper:]' '[:lower:]' | tr -cd '[:alnum:]').$(echo "$REPO" | tr '[:upper:]' '[:lower:]' | tr -cd '[:alnum:]')"
+              ID=$(echo "$OWNER-$REPO-$TAG" | md5sum | cut -c1-12)
+              
+              # Primary APK
+              APK_URL=$(echo "$DOWNLOADS" | jq -r '[.[] | select(.type == "apk")] | first | .url // ""')
+              APK_SIZE=$(echo "$DOWNLOADS" | jq '[.[] | select(.type == "apk")] | first | .size // 0')
+              APK_NAME=$(echo "$DOWNLOADS" | jq -r '[.[] | select(.type == "apk")] | first | .filename // ""')
+              
+              # Build entry
+              jq -n \
+                --arg id "$ID" \
+                --arg pkg "$PKG" \
+                --arg name "$APP_NAME" \
+                --arg repo "$REPO" \
+                --arg url "https://github.com/$OWNER/$REPO" \
+                --arg tag "$TAG" \
+                --arg ver "$VERSION" \
+                --argjson build "$BUILD" \
+                --arg desc "Release $TAG from $REPO" \
+                --arg notes "$BODY" \
+                --arg date "$PUBLISHED" \
+                --arg ch "$CHANNEL" \
+                --argjson beta "$([ "$CHANNEL" = "beta" ] && echo true || echo false)" \
+                --argjson dl "$DOWNLOADS" \
+                --arg apk "$APK_URL" \
+                --argjson apksize "$APK_SIZE" \
+                --arg apkname "$APK_NAME" \
+                '{
+                  id: $id, package_name: $pkg, app_name: $name,
+                  repository: $repo, repository_url: $url, tag: $tag,
+                  version: $ver, build_number: $build,
+                  description: $desc, release_notes: $notes,
+                  release_date: $date, icon_url: null,
+                  channel: $ch, is_beta: $beta, downloads: $dl,
+                  apk_url: (if $apk == "" then null else $apk end),
+                  apk_size: $apksize,
+                  apk_name: (if $apkname == "" then null else $apkname end)
+                }' >> /tmp/apps.json
+              
+              TOTAL=$((TOTAL + 1))
+          done
+          
+          echo ""
+          echo "📊 Total: $TOTAL releases"
+          
+          # Build final JSON using jq directly (most reliable method)
+          TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          
+          if [ -s /tmp/apps.json ]; then
+            # Combine all JSON objects into array and wrap with metadata
+            jq -s --arg ts "$TIMESTAMP" '{version: 3, generated_at: $ts, apps: .}' /tmp/apps.json > releases.json
+          else
+            echo '{"version": 3, "generated_at": "'"$TIMESTAMP"'", "apps": []}' > releases.json
+          fi
+          
+          # Validate JSON
+          if jq empty releases.json 2>/dev/null; then
+            APP_COUNT=$(jq '.apps | length' releases.json)
+            echo "✅ Valid JSON with $APP_COUNT apps"
+          else
+            echo "❌ Invalid JSON generated!"
+            echo "Debug: Contents of /tmp/apps.json:"
+            head -20 /tmp/apps.json 2>/dev/null || echo "File empty or not found"
+            # Fallback to empty
+            echo '{"version": 3, "generated_at": "'"$TIMESTAMP"'", "apps": []}' > releases.json
+          fi
+
+      - name: Update app_releases.json
+        run: |
+          jq '{version: .version, last_updated: .generated_at, apps: .apps}' releases.json > app_releases.json
+      
+      - name: Commit and push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add releases.json app_releases.json
+          git diff --quiet --cached || git commit -m "chore: Update App Store [skip ci]"
+          git push || true
+      
+      - name: Summary
+        run: |
+          echo "## 📱 App Store Updated" >> $GITHUB_STEP_SUMMARY
+          echo "Total: $(jq '.apps | length' releases.json) releases" >> $GITHUB_STEP_SUMMARY
