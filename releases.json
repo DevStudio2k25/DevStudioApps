@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generated_at": "2025-12-23T18:36:13Z",
+  "generated_at": "2025-12-23T20:59:33Z",
   "apps": [
     {
       "id": "466238fd5959",
@@ -48,17 +48,17 @@
       "apk_name": "app-arm64-v8a-release.apk"
     },
     {
-      "id": "8900f5217a6b",
+      "id": "6570dc3ab652",
       "package_name": "com.devstudio2k25.bloomeetunes",
       "app_name": "BloomeeTunes",
       "repository": "BloomeeTunes",
       "repository_url": "https://github.com/DevStudio2k25/BloomeeTunes",
-      "tag": "v2.18.1+188",
-      "version": "2.18.1+188",
-      "build_number": 188,
-      "description": "Release v2.18.1+188 from BloomeeTunes",
-      "release_notes": "## 🎵 BloomeeTunes v2.18.1+188\n\n### 📦 Downloads\n\n**Android APKs:**\n- **Universal APK** - Works on all Android devices\n- **ARM64** - Recommended for modern devices (2019+)\n- **ARM32** - For older 32-bit devices\n- **x86_64** - For Intel/AMD 64-bit devices\n- **x86** - For Intel/AMD 32-bit devices\n\n**Desktop Apps:**\n- **Windows x64** - Windows 10/11 desktop version\n- **Linux x64** - Linux desktop version\n\n### 📝 Build Information\n- **App Version:** 2.18.1\n- **Build Number:** 188\n- **GitHub Run:** #18\n- **Commit:** 8af5d47d52ed7f98a1fd5cb7e4f39648f5e53b5e\n\n### 🔐 Security\nAll APKs are signed with DevStudio keystore.\n\n### 📥 Installation\n- **Android:** Download and install the appropriate APK for your device\n- **Windows:** Extract the ZIP and run BloomeeTunes.exe\n- **Linux:** Extract the ZIP and run the executable",
-      "release_date": "2025-12-23T08:55:50Z",
+      "tag": "v2.18.2+189",
+      "version": "2.18.2+189",
+      "build_number": 189,
+      "description": "Release v2.18.2+189 from BloomeeTunes",
+      "release_notes": "## 🎵 BloomeeTunes v2.18.2+189\n\n### 📦 Downloads\n\n**Android APKs:**\n- **Universal APK** - Works on all Android devices\n- **ARM64** - Recommended for modern devices (2019+)\n- **ARM32** - For older 32-bit devices\n- **x86_64** - For Intel/AMD 64-bit devices\n- **x86** - For Intel/AMD 32-bit devices\n\n**Desktop Apps:**\n- **Windows x64** - Windows 10/11 desktop version\n- **Linux x64** - Linux desktop version\n\n### 📝 Build Information\n- **App Version:** 2.18.2\n- **Build Number:** 189\n- **GitHub Run:** #20\n- **Commit:** db00b0449d22d952a67d23db5913059afce98781\n\n### 🔐 Security\nAll APKs are signed with DevStudio keystore.\n\n### 📥 Installation\n- **Android:** Download and install the appropriate APK for your device\n- **Windows:** Extract the ZIP and run BloomeeTunes.exe\n- **Linux:** Extract the ZIP and run the executable",
+      "release_date": "2025-12-23T19:58:18Z",
       "icon_url": null,
       "channel": "stable",
       "is_beta": false,
@@ -67,62 +67,62 @@
           "platform": "android",
           "type": "apk",
           "arch": "arm32",
-          "url": "https://github.com/DevStudio2k25/BloomeeTunes/releases/download/v2.18.1%2B188/BloomeeTunes-Android-ARM32-v2.18.1%2B188.apk",
-          "filename": "BloomeeTunes-Android-ARM32-v2.18.1+188.apk",
+          "url": "https://github.com/DevStudio2k25/BloomeeTunes/releases/download/v2.18.2%2B189/BloomeeTunes-Android-ARM32-v2.18.2%2B189.apk",
+          "filename": "BloomeeTunes-Android-ARM32-v2.18.2+189.apk",
           "size": 41909346
         },
         {
           "platform": "android",
           "type": "apk",
           "arch": "arm64",
-          "url": "https://github.com/DevStudio2k25/BloomeeTunes/releases/download/v2.18.1%2B188/BloomeeTunes-Android-ARM64-v2.18.1%2B188.apk",
-          "filename": "BloomeeTunes-Android-ARM64-v2.18.1+188.apk",
+          "url": "https://github.com/DevStudio2k25/BloomeeTunes/releases/download/v2.18.2%2B189/BloomeeTunes-Android-ARM64-v2.18.2%2B189.apk",
+          "filename": "BloomeeTunes-Android-ARM64-v2.18.2+189.apk",
           "size": 44254692
         },
         {
           "platform": "android",
           "type": "apk",
           "arch": "universal",
-          "url": "https://github.com/DevStudio2k25/BloomeeTunes/releases/download/v2.18.1%2B188/BloomeeTunes-Android-Universal-v2.18.1%2B188.apk",
-          "filename": "BloomeeTunes-Android-Universal-v2.18.1+188.apk",
+          "url": "https://github.com/DevStudio2k25/BloomeeTunes/releases/download/v2.18.2%2B189/BloomeeTunes-Android-Universal-v2.18.2%2B189.apk",
+          "filename": "BloomeeTunes-Android-Universal-v2.18.2+189.apk",
           "size": 99417995
         },
         {
           "platform": "android",
           "type": "apk",
           "arch": "x86",
-          "url": "https://github.com/DevStudio2k25/BloomeeTunes/releases/download/v2.18.1%2B188/BloomeeTunes-Android-x86-v2.18.1%2B188.apk",
-          "filename": "BloomeeTunes-Android-x86-v2.18.1+188.apk",
+          "url": "https://github.com/DevStudio2k25/BloomeeTunes/releases/download/v2.18.2%2B189/BloomeeTunes-Android-x86-v2.18.2%2B189.apk",
+          "filename": "BloomeeTunes-Android-x86-v2.18.2+189.apk",
           "size": 18442112
         },
         {
           "platform": "android",
           "type": "apk",
           "arch": "x64",
-          "url": "https://github.com/DevStudio2k25/BloomeeTunes/releases/download/v2.18.1%2B188/BloomeeTunes-Android-x86_64-v2.18.1%2B188.apk",
-          "filename": "BloomeeTunes-Android-x86_64-v2.18.1+188.apk",
+          "url": "https://github.com/DevStudio2k25/BloomeeTunes/releases/download/v2.18.2%2B189/BloomeeTunes-Android-x86_64-v2.18.2%2B189.apk",
+          "filename": "BloomeeTunes-Android-x86_64-v2.18.2+189.apk",
           "size": 46250997
         },
         {
           "platform": "linux",
           "type": "zip",
           "arch": "x64",
-          "url": "https://github.com/DevStudio2k25/BloomeeTunes/releases/download/v2.18.1%2B188/BloomeeTunes-Linux-x64-v2.18.1%2B188.zip",
-          "filename": "BloomeeTunes-Linux-x64-v2.18.1+188.zip",
+          "url": "https://github.com/DevStudio2k25/BloomeeTunes/releases/download/v2.18.2%2B189/BloomeeTunes-Linux-x64-v2.18.2%2B189.zip",
+          "filename": "BloomeeTunes-Linux-x64-v2.18.2+189.zip",
           "size": 28662439
         },
         {
           "platform": "windows",
           "type": "zip",
           "arch": "x64",
-          "url": "https://github.com/DevStudio2k25/BloomeeTunes/releases/download/v2.18.1%2B188/BloomeeTunes-Windows-x64-v2.18.1%2B188.zip",
-          "filename": "BloomeeTunes-Windows-x64-v2.18.1+188.zip",
-          "size": 31599374
+          "url": "https://github.com/DevStudio2k25/BloomeeTunes/releases/download/v2.18.2%2B189/BloomeeTunes-Windows-x64-v2.18.2%2B189.zip",
+          "filename": "BloomeeTunes-Windows-x64-v2.18.2+189.zip",
+          "size": 31599397
         }
       ],
-      "apk_url": "https://github.com/DevStudio2k25/BloomeeTunes/releases/download/v2.18.1%2B188/BloomeeTunes-Android-ARM32-v2.18.1%2B188.apk",
+      "apk_url": "https://github.com/DevStudio2k25/BloomeeTunes/releases/download/v2.18.2%2B189/BloomeeTunes-Android-ARM32-v2.18.2%2B189.apk",
       "apk_size": 41909346,
-      "apk_name": "BloomeeTunes-Android-ARM32-v2.18.1+188.apk"
+      "apk_name": "BloomeeTunes-Android-ARM32-v2.18.2+189.apk"
     },
     {
       "id": "f6b5a92bc3dc",
