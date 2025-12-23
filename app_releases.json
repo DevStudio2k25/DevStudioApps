@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "last_updated": "2025-12-23T21:11:32Z",
+  "last_updated": "2025-12-23T21:22:54Z",
   "apps": [
     {
       "id": "466238fd5959",
@@ -237,6 +237,75 @@
       "apk_url": "https://github.com/DevStudio2k25/devstudio/releases/download/v1.1.1/app-arm64-v8a-release.apk",
       "apk_size": 26413453,
       "apk_name": "app-arm64-v8a-release.apk"
+    },
+    {
+      "id": "a1743e7295fd",
+      "package_name": "com.devstudio2k25.devstudio2025",
+      "app_name": "DevStudio",
+      "repository": "DevStudio2025",
+      "repository_url": "https://github.com/DevStudio2k25/DevStudio2025",
+      "tag": "v1.2.1+16",
+      "version": "1.2.1+16",
+      "build_number": 16,
+      "description": "Release v1.2.1+16 from DevStudio2025",
+      "release_notes": "# DevStudio v1.2.1\n\n## What's New\n\n### 📱 App Store\nDownload apps from the DevStudio ecosystem directly within the app.\n\n- Browse available apps with beautiful cards\n- See all download variants (ARM64, ARM32, Universal, Windows)\n- Real-time download progress with speed indicator\n- Shows total download time after completion\n- Install APKs directly from the app\n- Smart recommendations based on your device\n- Architecture info for each download variant\n\n### 📝 Request Resources\nSubmit requests for new content you'd like to see.\n\n- Request AI Tools, YouTube Channels, Playlists\n- Track your submitted requests\n- Filter by status and type\n\n### 🎨 UI Improvements\n- Cleaner app details page\n- Circular progress around app icons\n- Network speed display while downloading\n- Device-specific recommendations\n\n---\n\n**Enjoy the update!** 🎉",
+      "release_date": "2025-12-23T21:06:24Z",
+      "icon_url": null,
+      "channel": "stable",
+      "is_beta": false,
+      "downloads": [
+        {
+          "platform": "android",
+          "type": "apk",
+          "arch": "arm32",
+          "url": "https://github.com/DevStudio2k25/DevStudio2025/releases/download/v1.2.1%2B16/DevStudio-Android-ARM32-v1.2.1%2B16.apk",
+          "filename": "DevStudio-Android-ARM32-v1.2.1+16.apk",
+          "size": 25698341
+        },
+        {
+          "platform": "android",
+          "type": "apk",
+          "arch": "arm64",
+          "url": "https://github.com/DevStudio2k25/DevStudio2025/releases/download/v1.2.1%2B16/DevStudio-Android-ARM64-v1.2.1%2B16.apk",
+          "filename": "DevStudio-Android-ARM64-v1.2.1+16.apk",
+          "size": 27579383
+        },
+        {
+          "platform": "android",
+          "type": "apk",
+          "arch": "universal",
+          "url": "https://github.com/DevStudio2k25/DevStudio2025/releases/download/v1.2.1%2B16/DevStudio-Android-Universal-v1.2.1%2B16.apk",
+          "filename": "DevStudio-Android-Universal-v1.2.1+16.apk",
+          "size": 69694556
+        },
+        {
+          "platform": "android",
+          "type": "apk",
+          "arch": "x86",
+          "url": "https://github.com/DevStudio2k25/DevStudio2025/releases/download/v1.2.1%2B16/DevStudio-Android-x86-v1.2.1%2B16.apk",
+          "filename": "DevStudio-Android-x86-v1.2.1+16.apk",
+          "size": 6351147
+        },
+        {
+          "platform": "android",
+          "type": "apk",
+          "arch": "x64",
+          "url": "https://github.com/DevStudio2k25/DevStudio2025/releases/download/v1.2.1%2B16/DevStudio-Android-x86_64-v1.2.1%2B16.apk",
+          "filename": "DevStudio-Android-x86_64-v1.2.1+16.apk",
+          "size": 29078070
+        },
+        {
+          "platform": "windows",
+          "type": "zip",
+          "arch": "x64",
+          "url": "https://github.com/DevStudio2k25/DevStudio2025/releases/download/v1.2.1%2B16/DevStudio-Windows-x64-v1.2.1%2B16.zip",
+          "filename": "DevStudio-Windows-x64-v1.2.1+16.zip",
+          "size": 23956492
+        }
+      ],
+      "apk_url": "https://github.com/DevStudio2k25/DevStudio2025/releases/download/v1.2.1%2B16/DevStudio-Android-ARM32-v1.2.1%2B16.apk",
+      "apk_size": 25698341,
+      "apk_name": "DevStudio-Android-ARM32-v1.2.1+16.apk"
     }
   ]
 }
