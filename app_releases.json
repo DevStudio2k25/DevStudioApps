@@ -1,0 +1,271 @@
+{
+  "version": 3,
+  "last_updated": "2025-12-23T17:45:30Z",
+  "apps": [
+    {
+      "id": "466238fd5959",
+      "package_name": "com.devstudio2k25.aitodo",
+      "app_name": "ai-todo",
+      "repository": "ai-todo",
+      "repository_url": "https://github.com/DevStudio2k25/ai-todo",
+      "tag": "1.0.0",
+      "version": "1.0.0",
+      "build_number": 1,
+      "description": "Release 1.0.0 from ai-todo",
+      "release_notes": "**Full Changelog**: https://github.com/DevStudio2k25/ai-todo/commits/1.0.0",
+      "release_date": "2025-10-03T05:18:15Z",
+      "icon_url": null,
+      "channel": "stable",
+      "is_beta": false,
+      "downloads": [
+        {
+          "platform": "android",
+          "type": "apk",
+          "arch": "arm64",
+          "url": "https://github.com/DevStudio2k25/ai-todo/releases/download/1.0.0/app-arm64-v8a-release.apk",
+          "filename": "app-arm64-v8a-release.apk",
+          "size": 18100526
+        },
+        {
+          "platform": "android",
+          "type": "apk",
+          "arch": "arm32",
+          "url": "https://github.com/DevStudio2k25/ai-todo/releases/download/1.0.0/app-armeabi-v7a-release.apk",
+          "filename": "app-armeabi-v7a-release.apk",
+          "size": 15613004
+        },
+        {
+          "platform": "android",
+          "type": "apk",
+          "arch": "x64",
+          "url": "https://github.com/DevStudio2k25/ai-todo/releases/download/1.0.0/app-x86_64-release.apk",
+          "filename": "app-x86_64-release.apk",
+          "size": 19272717
+        }
+      ],
+      "apk_url": "https://github.com/DevStudio2k25/ai-todo/releases/download/1.0.0/app-arm64-v8a-release.apk",
+      "apk_size": 18100526,
+      "apk_name": "app-arm64-v8a-release.apk"
+    },
+    {
+      "id": "8900f5217a6b",
+      "package_name": "com.devstudio2k25.bloomeetunes",
+      "app_name": "BloomeeTunes",
+      "repository": "BloomeeTunes",
+      "repository_url": "https://github.com/DevStudio2k25/BloomeeTunes",
+      "tag": "v2.18.1+188",
+      "version": "2.18.1+188",
+      "build_number": 188,
+      "description": "Release v2.18.1+188 from BloomeeTunes",
+      "release_notes": "## 🎵 BloomeeTunes v2.18.1+188\n\n### 📦 Downloads\n\n**Android APKs:**\n- **Universal APK** - Works on all Android devices\n- **ARM64** - Recommended for modern devices (2019+)\n- **ARM32** - For older 32-bit devices\n- **x86_64** - For Intel/AMD 64-bit devices\n- **x86** - For Intel/AMD 32-bit devices\n\n**Desktop Apps:**\n- **Windows x64** - Windows 10/11 desktop version\n- **Linux x64** - Linux desktop version\n\n### 📝 Build Information\n- **App Version:** 2.18.1\n- **Build Number:** 188\n- **GitHub Run:** #18\n- **Commit:** 8af5d47d52ed7f98a1fd5cb7e4f39648f5e53b5e\n\n### 🔐 Security\nAll APKs are signed with DevStudio keystore.\n\n### 📥 Installation\n- **Android:** Download and install the appropriate APK for your device\n- **Windows:** Extract the ZIP and run BloomeeTunes.exe\n- **Linux:** Extract the ZIP and run the executable",
+      "release_date": "2025-12-23T08:55:50Z",
+      "icon_url": null,
+      "channel": "stable",
+      "is_beta": false,
+      "downloads": [
+        {
+          "platform": "android",
+          "type": "apk",
+          "arch": "arm32",
+          "url": "https://github.com/DevStudio2k25/BloomeeTunes/releases/download/v2.18.1%2B188/BloomeeTunes-Android-ARM32-v2.18.1%2B188.apk",
+          "filename": "BloomeeTunes-Android-ARM32-v2.18.1+188.apk",
+          "size": 41909346
+        },
+        {
+          "platform": "android",
+          "type": "apk",
+          "arch": "arm64",
+          "url": "https://github.com/DevStudio2k25/BloomeeTunes/releases/download/v2.18.1%2B188/BloomeeTunes-Android-ARM64-v2.18.1%2B188.apk",
+          "filename": "BloomeeTunes-Android-ARM64-v2.18.1+188.apk",
+          "size": 44254692
+        },
+        {
+          "platform": "android",
+          "type": "apk",
+          "arch": "universal",
+          "url": "https://github.com/DevStudio2k25/BloomeeTunes/releases/download/v2.18.1%2B188/BloomeeTunes-Android-Universal-v2.18.1%2B188.apk",
+          "filename": "BloomeeTunes-Android-Universal-v2.18.1+188.apk",
+          "size": 99417995
+        },
+        {
+          "platform": "android",
+          "type": "apk",
+          "arch": "x86",
+          "url": "https://github.com/DevStudio2k25/BloomeeTunes/releases/download/v2.18.1%2B188/BloomeeTunes-Android-x86-v2.18.1%2B188.apk",
+          "filename": "BloomeeTunes-Android-x86-v2.18.1+188.apk",
+          "size": 18442112
+        },
+        {
+          "platform": "android",
+          "type": "apk",
+          "arch": "x64",
+          "url": "https://github.com/DevStudio2k25/BloomeeTunes/releases/download/v2.18.1%2B188/BloomeeTunes-Android-x86_64-v2.18.1%2B188.apk",
+          "filename": "BloomeeTunes-Android-x86_64-v2.18.1+188.apk",
+          "size": 46250997
+        },
+        {
+          "platform": "linux",
+          "type": "zip",
+          "arch": "x64",
+          "url": "https://github.com/DevStudio2k25/BloomeeTunes/releases/download/v2.18.1%2B188/BloomeeTunes-Linux-x64-v2.18.1%2B188.zip",
+          "filename": "BloomeeTunes-Linux-x64-v2.18.1+188.zip",
+          "size": 28662439
+        },
+        {
+          "platform": "windows",
+          "type": "zip",
+          "arch": "x64",
+          "url": "https://github.com/DevStudio2k25/BloomeeTunes/releases/download/v2.18.1%2B188/BloomeeTunes-Windows-x64-v2.18.1%2B188.zip",
+          "filename": "BloomeeTunes-Windows-x64-v2.18.1+188.zip",
+          "size": 31599374
+        }
+      ],
+      "apk_url": "https://github.com/DevStudio2k25/BloomeeTunes/releases/download/v2.18.1%2B188/BloomeeTunes-Android-ARM32-v2.18.1%2B188.apk",
+      "apk_size": 41909346,
+      "apk_name": "BloomeeTunes-Android-ARM32-v2.18.1+188.apk"
+    },
+    {
+      "id": "f6b5a92bc3dc",
+      "package_name": "com.devstudio2k25.devai",
+      "app_name": "DevAi",
+      "repository": "DevAi",
+      "repository_url": "https://github.com/DevStudio2k25/DevAi",
+      "tag": "v1.0.2",
+      "version": "1.0.2",
+      "build_number": 1,
+      "description": "Release v1.0.2 from DevAi",
+      "release_notes": "🚀 Release v1.0.2 – Complete UI Redesign & Performance Upgrade\r\n🧩 Overview\r\n\r\nThis release marks a major milestone for Devai — introducing a fully redesigned user interface with a cleaner, faster, and more intuitive experience across Web and Android platforms.\r\n\r\nThe app’s entire visual layout has been refreshed to deliver a modern anime-inspired design that’s smooth, engaging, and adaptive to different screens.\r\n\r\n✨ What’s New\r\n\r\n🌸 Full App UI Redesign\r\nEvery screen has been redesigned from scratch to enhance usability and aesthetics.\r\nThe new interface focuses on simplicity, readability, and a cohesive  visual theme.\r\n\r\n⚙️ Improved Performance\r\nOptimized rendering and asset management for faster loading and smoother navigation.\r\n\r\n🐞 Bug Fixes & Stability Improvements\r\n\r\nFixed several layout alignment and scaling issues.\r\n\r\nResolved crashes on certain devices during startup.\r\n\r\nImproved data fetching and caching logic for better responsiveness.\r\n\r\n📱 Cross-Platform Enhancements\r\n\r\nUnified design system for Android & Web versions.\r\n\r\nEnhanced adaptive layouts for different screen sizes and orientations.\r\n\r\nOptimized animations for better frame consistency.\r\n\r\n🛠️ Developer Notes\r\n\r\nCodebase cleaned and modularized for easier future updates.\r\n\r\nMinor updates to dependencies and libraries for stability and performance.\r\n\r\nPreparing the foundation for upcoming feature updates (stay tuned 😉).\r\n\r\n🌟 Experience the New Devai\r\n\r\nDive into the all-new Devai experience with refreshed visuals, smoother performance, and a truly immersive anime-inspired interface.",
+      "release_date": "2025-07-16T12:48:12Z",
+      "icon_url": null,
+      "channel": "stable",
+      "is_beta": false,
+      "downloads": [
+        {
+          "platform": "android",
+          "type": "apk",
+          "arch": "arm64",
+          "url": "https://github.com/DevStudio2k25/DevAi/releases/download/v1.0.2/app-arm64-v8a-release.apk",
+          "filename": "app-arm64-v8a-release.apk",
+          "size": 25570194
+        },
+        {
+          "platform": "android",
+          "type": "apk",
+          "arch": "arm32",
+          "url": "https://github.com/DevStudio2k25/DevAi/releases/download/v1.0.2/app-armeabi-v7a-release.apk",
+          "filename": "app-armeabi-v7a-release.apk",
+          "size": 23410288
+        },
+        {
+          "platform": "android",
+          "type": "apk",
+          "arch": "x64",
+          "url": "https://github.com/DevStudio2k25/DevAi/releases/download/v1.0.2/app-x86_64-release.apk",
+          "filename": "app-x86_64-release.apk",
+          "size": 26742449
+        }
+      ],
+      "apk_url": "https://github.com/DevStudio2k25/DevAi/releases/download/v1.0.2/app-arm64-v8a-release.apk",
+      "apk_size": 25570194,
+      "apk_name": "app-arm64-v8a-release.apk"
+    },
+    {
+      "id": "cab4723d9cf5",
+      "package_name": "com.devstudio2k25.devstudio",
+      "app_name": "DevStudio",
+      "repository": "devstudio",
+      "repository_url": "https://github.com/DevStudio2k25/devstudio",
+      "tag": "v1.1.1",
+      "version": "1.1.1",
+      "build_number": 1,
+      "description": "Release v1.1.1 from devstudio",
+      "release_notes": "# 🚀 DevStudio v1.1.1 - What's New\r\n\r\n\r\n**Release Date:** December 11, 2024\r\n\r\n---\r\n\r\n## ✨ New Features\r\n\r\n### 📝 **Request Resources System**\r\nNow you can request new content to be added to DevStudio:\r\n- Request AI Tools you want to see in the app\r\n- Suggest YouTube Channels for Learning Hub\r\n- Request Playlists for specific topics\r\n- Ask for videos on topics you want to learn\r\n- Suggest learning materials, books, or docs\r\n\r\n### 📋 **Track Your Requests**\r\nKeep track of everything you've requested:\r\n- View all your submitted requests in one place\r\n- See status: Pending, Approved, or Rejected\r\n- Filter by status to find what you're looking for\r\n- Filter by type (AI Tools, Channels, Playlists, etc.)\r\n- Tap any request to see full details\r\n- Beautiful color-coded cards for each type\r\n\r\n### 🎨 **Beautiful Design**\r\nEach request type has its own unique look:\r\n- AI Tools - Purple gradient with sparkle icon\r\n- Channels - Red gradient with video library icon\r\n- Playlists - Orange gradient with playlist icon\r\n- Topic Videos - Purple gradient with topic icon\r\n- Materials - Green gradient with book icon\r\n\r\n---\r\n\r\n## 🎨 Design Updates\r\n\r\n- Colorful gradient cards for each request type\r\n- Status badges with icons (Pending/Approved/Rejected)\r\n- Clean filter chips for easy sorting\r\n- Beautiful success dialogs after submitting\r\n- Smooth animations throughout\r\n- Modern, professional look\r\n\r\n---\r\n\r\n## 🐛 Fixes\r\n\r\n- Icons now load properly from cloud storage\r\n- Removed unnecessary settings options\r\n- Cleaned up debug messages\r\n- Better form validation\r\n- Improved request submission\r\n- Faster history loading\r\n\r\n---\r\n\r\n## 🙏 Thank You!\r\n\r\nWe're constantly improving DevStudio based on your feedback. Now you can directly request features and content you want to see!\r\n\r\n**Enjoy the new features!** 🎉\r",
+      "release_date": "2025-11-20T03:50:22Z",
+      "icon_url": null,
+      "channel": "stable",
+      "is_beta": false,
+      "downloads": [
+        {
+          "platform": "android",
+          "type": "apk",
+          "arch": "arm64",
+          "url": "https://github.com/DevStudio2k25/devstudio/releases/download/v1.1.1/app-arm64-v8a-release.apk",
+          "filename": "app-arm64-v8a-release.apk",
+          "size": 26413453
+        },
+        {
+          "platform": "android",
+          "type": "apk",
+          "arch": "arm32",
+          "url": "https://github.com/DevStudio2k25/devstudio/releases/download/v1.1.1/app-armeabi-v7a-release.apk",
+          "filename": "app-armeabi-v7a-release.apk",
+          "size": 24302699
+        },
+        {
+          "platform": "android",
+          "type": "apk",
+          "arch": "universal",
+          "url": "https://github.com/DevStudio2k25/devstudio/releases/download/v1.1.1/app-universal-release.apk",
+          "filename": "app-universal-release.apk",
+          "size": 66776790
+        },
+        {
+          "platform": "android",
+          "type": "apk",
+          "arch": "x86",
+          "url": "https://github.com/DevStudio2k25/devstudio/releases/download/v1.1.1/app-x86-release.apk",
+          "filename": "app-x86-release.apk",
+          "size": 5780397
+        },
+        {
+          "platform": "android",
+          "type": "apk",
+          "arch": "x64",
+          "url": "https://github.com/DevStudio2k25/devstudio/releases/download/v1.1.1/app-x86_64-release.apk",
+          "filename": "app-x86_64-release.apk",
+          "size": 27585708
+        },
+        {
+          "platform": "windows",
+          "type": "exe",
+          "arch": null,
+          "url": "https://github.com/DevStudio2k25/devstudio/releases/download/v1.1.1/DevStudio.exe",
+          "filename": "DevStudio.exe",
+          "size": 17720619
+        }
+      ],
+      "apk_url": "https://github.com/DevStudio2k25/devstudio/releases/download/v1.1.1/app-arm64-v8a-release.apk",
+      "apk_size": 26413453,
+      "apk_name": "app-arm64-v8a-release.apk"
+    },
+    {
+      "id": "ffbe69fbdbcf",
+      "package_name": "com.devstudio2k25.devstudioapps",
+      "app_name": "DevAi",
+      "repository": "DevStudioApps",
+      "repository_url": "https://github.com/DevStudio2k25/DevStudioApps",
+      "tag": "v.1.0.1",
+      "version": ".1.0.1",
+      "build_number": 1,
+      "description": "Release v.1.0.1 from DevStudioApps",
+      "release_notes": "",
+      "release_date": "2025-07-16T13:23:01Z",
+      "icon_url": null,
+      "channel": "stable",
+      "is_beta": false,
+      "downloads": [
+        {
+          "platform": "android",
+          "type": "apk",
+          "arch": null,
+          "url": "https://github.com/DevStudio2k25/DevStudioApps/releases/download/v.1.0.1/DevAi.apk",
+          "filename": "DevAi.apk",
+          "size": 30813280
+        }
+      ],
+      "apk_url": "https://github.com/DevStudio2k25/DevStudioApps/releases/download/v.1.0.1/DevAi.apk",
+      "apk_size": 30813280,
+      "apk_name": "DevAi.apk"
+    }
+  ]
+}
