@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generated_at": "2025-12-24T12:50:28Z",
+  "generated_at": "2025-12-24T18:34:46Z",
   "apps": [
     {
       "id": "466238fd5959",
@@ -231,12 +231,41 @@
           "arch": "x64",
           "url": "https://github.com/DevStudio2k25/DevStudio2025/releases/download/v1.2.3%2B21/DevStudio-Windows-x64-v1.2.3%2B21.zip",
           "filename": "DevStudio-Windows-x64-v1.2.3+21.zip",
-          "size": 23476943
+          "size": 23476915
         }
       ],
       "apk_url": "https://github.com/DevStudio2k25/DevStudio2025/releases/download/v1.2.3%2B21/DevStudio-Android-ARM32-v1.2.3%2B21.apk",
       "apk_size": 25293316,
       "apk_name": "DevStudio-Android-ARM32-v1.2.3+21.apk"
+    },
+    {
+      "id": "97d71941b43d",
+      "package_name": "com.devstudio2k25.workspace",
+      "app_name": "Release",
+      "repository": "WorkSpace",
+      "repository_url": "https://github.com/DevStudio2k25/WorkSpace",
+      "tag": "v1.0.6",
+      "version": "1.0.6",
+      "build_number": 1,
+      "description": "Release v1.0.6 from WorkSpace",
+      "release_notes": "# Release Notes\n\n## 🚀 New Features\n- **Secure Image Vault**: Hide your private photos with AES-256 encryption.\n- **Thumbnails**: View hidden images with generated thumbnails.\n- **Multi-select**: Hide multiple images at once from the gallery.\n- **Auto-Delete**: Originally moved images are automatically deleted from the public gallery.\n\n## 🐛 Bug Fixes\n- Fixed crash when picking invalid files.\n- Improved app startup performance.\n\n## 🔧 Improvements\n- Enhanced UI with smooth animations.\n- Secure key management using Android Keystore.",
+      "release_date": "2025-12-24T18:28:35Z",
+      "icon_url": null,
+      "channel": "stable",
+      "is_beta": false,
+      "downloads": [
+        {
+          "platform": "android",
+          "type": "apk",
+          "arch": null,
+          "url": "https://github.com/DevStudio2k25/WorkSpace/releases/download/v1.0.6/app-release.apk",
+          "filename": "app-release.apk",
+          "size": 17037524
+        }
+      ],
+      "apk_url": "https://github.com/DevStudio2k25/WorkSpace/releases/download/v1.0.6/app-release.apk",
+      "apk_size": 17037524,
+      "apk_name": "app-release.apk"
     }
   ]
 }
