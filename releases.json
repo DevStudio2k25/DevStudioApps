@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generated_at": "2025-12-23T21:22:54Z",
+  "generated_at": "2025-12-24T01:55:02Z",
   "apps": [
     {
       "id": "466238fd5959",
@@ -170,86 +170,17 @@
       "apk_name": "app-arm64-v8a-release.apk"
     },
     {
-      "id": "cab4723d9cf5",
-      "package_name": "com.devstudio2k25.devstudio",
-      "app_name": "DevStudio",
-      "repository": "devstudio",
-      "repository_url": "https://github.com/DevStudio2k25/devstudio",
-      "tag": "v1.1.1",
-      "version": "1.1.1",
-      "build_number": 1,
-      "description": "Release v1.1.1 from devstudio",
-      "release_notes": "# 🚀 DevStudio v1.1.1 - What's New\r\n\r\n\r\n**Release Date:** December 11, 2024\r\n\r\n---\r\n\r\n## ✨ New Features\r\n\r\n### 📝 **Request Resources System**\r\nNow you can request new content to be added to DevStudio:\r\n- Request AI Tools you want to see in the app\r\n- Suggest YouTube Channels for Learning Hub\r\n- Request Playlists for specific topics\r\n- Ask for videos on topics you want to learn\r\n- Suggest learning materials, books, or docs\r\n\r\n### 📋 **Track Your Requests**\r\nKeep track of everything you've requested:\r\n- View all your submitted requests in one place\r\n- See status: Pending, Approved, or Rejected\r\n- Filter by status to find what you're looking for\r\n- Filter by type (AI Tools, Channels, Playlists, etc.)\r\n- Tap any request to see full details\r\n- Beautiful color-coded cards for each type\r\n\r\n### 🎨 **Beautiful Design**\r\nEach request type has its own unique look:\r\n- AI Tools - Purple gradient with sparkle icon\r\n- Channels - Red gradient with video library icon\r\n- Playlists - Orange gradient with playlist icon\r\n- Topic Videos - Purple gradient with topic icon\r\n- Materials - Green gradient with book icon\r\n\r\n---\r\n\r\n## 🎨 Design Updates\r\n\r\n- Colorful gradient cards for each request type\r\n- Status badges with icons (Pending/Approved/Rejected)\r\n- Clean filter chips for easy sorting\r\n- Beautiful success dialogs after submitting\r\n- Smooth animations throughout\r\n- Modern, professional look\r\n\r\n---\r\n\r\n## 🐛 Fixes\r\n\r\n- Icons now load properly from cloud storage\r\n- Removed unnecessary settings options\r\n- Cleaned up debug messages\r\n- Better form validation\r\n- Improved request submission\r\n- Faster history loading\r\n\r\n---\r\n\r\n## 🙏 Thank You!\r\n\r\nWe're constantly improving DevStudio based on your feedback. Now you can directly request features and content you want to see!\r\n\r\n**Enjoy the new features!** 🎉\r",
-      "release_date": "2025-11-20T03:50:22Z",
-      "icon_url": null,
-      "channel": "stable",
-      "is_beta": false,
-      "downloads": [
-        {
-          "platform": "android",
-          "type": "apk",
-          "arch": "arm64",
-          "url": "https://github.com/DevStudio2k25/devstudio/releases/download/v1.1.1/app-arm64-v8a-release.apk",
-          "filename": "app-arm64-v8a-release.apk",
-          "size": 26413453
-        },
-        {
-          "platform": "android",
-          "type": "apk",
-          "arch": "arm32",
-          "url": "https://github.com/DevStudio2k25/devstudio/releases/download/v1.1.1/app-armeabi-v7a-release.apk",
-          "filename": "app-armeabi-v7a-release.apk",
-          "size": 24302699
-        },
-        {
-          "platform": "android",
-          "type": "apk",
-          "arch": "universal",
-          "url": "https://github.com/DevStudio2k25/devstudio/releases/download/v1.1.1/app-universal-release.apk",
-          "filename": "app-universal-release.apk",
-          "size": 66776790
-        },
-        {
-          "platform": "android",
-          "type": "apk",
-          "arch": "x86",
-          "url": "https://github.com/DevStudio2k25/devstudio/releases/download/v1.1.1/app-x86-release.apk",
-          "filename": "app-x86-release.apk",
-          "size": 5780397
-        },
-        {
-          "platform": "android",
-          "type": "apk",
-          "arch": "x64",
-          "url": "https://github.com/DevStudio2k25/devstudio/releases/download/v1.1.1/app-x86_64-release.apk",
-          "filename": "app-x86_64-release.apk",
-          "size": 27585708
-        },
-        {
-          "platform": "windows",
-          "type": "exe",
-          "arch": null,
-          "url": "https://github.com/DevStudio2k25/devstudio/releases/download/v1.1.1/DevStudio.exe",
-          "filename": "DevStudio.exe",
-          "size": 17720619
-        }
-      ],
-      "apk_url": "https://github.com/DevStudio2k25/devstudio/releases/download/v1.1.1/app-arm64-v8a-release.apk",
-      "apk_size": 26413453,
-      "apk_name": "app-arm64-v8a-release.apk"
-    },
-    {
-      "id": "a1743e7295fd",
+      "id": "a990a41b2c85",
       "package_name": "com.devstudio2k25.devstudio2025",
       "app_name": "DevStudio",
       "repository": "DevStudio2025",
       "repository_url": "https://github.com/DevStudio2k25/DevStudio2025",
-      "tag": "v1.2.1+16",
-      "version": "1.2.1+16",
-      "build_number": 16,
-      "description": "Release v1.2.1+16 from DevStudio2025",
-      "release_notes": "# DevStudio v1.2.1\n\n## What's New\n\n### 📱 App Store\nDownload apps from the DevStudio ecosystem directly within the app.\n\n- Browse available apps with beautiful cards\n- See all download variants (ARM64, ARM32, Universal, Windows)\n- Real-time download progress with speed indicator\n- Shows total download time after completion\n- Install APKs directly from the app\n- Smart recommendations based on your device\n- Architecture info for each download variant\n\n### 📝 Request Resources\nSubmit requests for new content you'd like to see.\n\n- Request AI Tools, YouTube Channels, Playlists\n- Track your submitted requests\n- Filter by status and type\n\n### 🎨 UI Improvements\n- Cleaner app details page\n- Circular progress around app icons\n- Network speed display while downloading\n- Device-specific recommendations\n\n---\n\n**Enjoy the update!** 🎉",
-      "release_date": "2025-12-23T21:06:24Z",
+      "tag": "v1.2.2+20",
+      "version": "1.2.2+20",
+      "build_number": 20,
+      "description": "Release v1.2.2+20 from DevStudio2025",
+      "release_notes": "# DevStudio v1.2.2\n\n## What's New\n\n### 🏪 Internal App Store - Complete Feature\n\nThe DevStudio App Store lets you browse, download, and install apps from the DevStudio ecosystem directly within the app.\n\n#### 📱 App Browsing\n- Beautiful app cards with icons and version info\n- App details page with all download variants\n- Platform sections: Android, Windows, Linux\n- Release notes for each app\n\n#### 📥 Download System\n- Real-time download progress with circular ring around app icon\n- Network speed display (KB/s, MB/s)\n- Total download time shown after completion\n- File existence check - skips if already downloaded\n- Cancel ongoing downloads anytime\n- Custom filename format: `AppName-v1.0.0-arch.apk`\n- Downloads saved to `/storage/emulated/0/Download/DevStudio/`\n\n#### 📲 Installation & Updates\n- Install APKs directly from the app\n- Detects installed apps and shows current version\n- Smart update detection - shows \"Update\" only when newer version available\n- Auto-refresh installed version when app resumes\n- Works with both release and debug builds\n\n#### 🎯 Smart Recommendations\n- Detects your device architecture (ARM64, ARM32, x86)\n- Shows \"RECOMMENDED\" badge for best variant\n- Color-coded tags:\n  - 🟢 Green: \"Recommended for your device\"\n  - 🔵 Blue: \"Works on all devices\" (Universal)\n  - 🔴 Red: \"Don't install on this device\"\n\n#### 🎨 Clean UI Design\n- Compact header with inline status badges\n- Circular progress ring around app icon during download\n- \"Installed • v2.18.2\" status with variant info\n- Clean asset tiles without redundant info\n\n---\n\n**Enjoy the update!** 🎉",
+      "release_date": "2025-12-23T23:40:50Z",
       "icon_url": null,
       "channel": "stable",
       "is_beta": false,
@@ -258,54 +189,54 @@
           "platform": "android",
           "type": "apk",
           "arch": "arm32",
-          "url": "https://github.com/DevStudio2k25/DevStudio2025/releases/download/v1.2.1%2B16/DevStudio-Android-ARM32-v1.2.1%2B16.apk",
-          "filename": "DevStudio-Android-ARM32-v1.2.1+16.apk",
-          "size": 25698341
+          "url": "https://github.com/DevStudio2k25/DevStudio2025/releases/download/v1.2.2%2B20/DevStudio-Android-ARM32-v1.2.2%2B20.apk",
+          "filename": "DevStudio-Android-ARM32-v1.2.2+20.apk",
+          "size": 25855427
         },
         {
           "platform": "android",
           "type": "apk",
           "arch": "arm64",
-          "url": "https://github.com/DevStudio2k25/DevStudio2025/releases/download/v1.2.1%2B16/DevStudio-Android-ARM64-v1.2.1%2B16.apk",
-          "filename": "DevStudio-Android-ARM64-v1.2.1+16.apk",
-          "size": 27579383
+          "url": "https://github.com/DevStudio2k25/DevStudio2025/releases/download/v1.2.2%2B20/DevStudio-Android-ARM64-v1.2.2%2B20.apk",
+          "filename": "DevStudio-Android-ARM64-v1.2.2+20.apk",
+          "size": 27703701
         },
         {
           "platform": "android",
           "type": "apk",
           "arch": "universal",
-          "url": "https://github.com/DevStudio2k25/DevStudio2025/releases/download/v1.2.1%2B16/DevStudio-Android-Universal-v1.2.1%2B16.apk",
-          "filename": "DevStudio-Android-Universal-v1.2.1+16.apk",
-          "size": 69694556
+          "url": "https://github.com/DevStudio2k25/DevStudio2025/releases/download/v1.2.2%2B20/DevStudio-Android-Universal-v1.2.2%2B20.apk",
+          "filename": "DevStudio-Android-Universal-v1.2.2+20.apk",
+          "size": 69851642
         },
         {
           "platform": "android",
           "type": "apk",
           "arch": "x86",
-          "url": "https://github.com/DevStudio2k25/DevStudio2025/releases/download/v1.2.1%2B16/DevStudio-Android-x86-v1.2.1%2B16.apk",
-          "filename": "DevStudio-Android-x86-v1.2.1+16.apk",
-          "size": 6351147
+          "url": "https://github.com/DevStudio2k25/DevStudio2025/releases/download/v1.2.2%2B20/DevStudio-Android-x86-v1.2.2%2B20.apk",
+          "filename": "DevStudio-Android-x86-v1.2.2+20.apk",
+          "size": 6475465
         },
         {
           "platform": "android",
           "type": "apk",
           "arch": "x64",
-          "url": "https://github.com/DevStudio2k25/DevStudio2025/releases/download/v1.2.1%2B16/DevStudio-Android-x86_64-v1.2.1%2B16.apk",
-          "filename": "DevStudio-Android-x86_64-v1.2.1+16.apk",
-          "size": 29078070
+          "url": "https://github.com/DevStudio2k25/DevStudio2025/releases/download/v1.2.2%2B20/DevStudio-Android-x86_64-v1.2.2%2B20.apk",
+          "filename": "DevStudio-Android-x86_64-v1.2.2+20.apk",
+          "size": 29202388
         },
         {
           "platform": "windows",
           "type": "zip",
           "arch": "x64",
-          "url": "https://github.com/DevStudio2k25/DevStudio2025/releases/download/v1.2.1%2B16/DevStudio-Windows-x64-v1.2.1%2B16.zip",
-          "filename": "DevStudio-Windows-x64-v1.2.1+16.zip",
-          "size": 23956492
+          "url": "https://github.com/DevStudio2k25/DevStudio2025/releases/download/v1.2.2%2B20/DevStudio-Windows-x64-v1.2.2%2B20.zip",
+          "filename": "DevStudio-Windows-x64-v1.2.2+20.zip",
+          "size": 24078360
         }
       ],
-      "apk_url": "https://github.com/DevStudio2k25/DevStudio2025/releases/download/v1.2.1%2B16/DevStudio-Android-ARM32-v1.2.1%2B16.apk",
-      "apk_size": 25698341,
-      "apk_name": "DevStudio-Android-ARM32-v1.2.1+16.apk"
+      "apk_url": "https://github.com/DevStudio2k25/DevStudio2025/releases/download/v1.2.2%2B20/DevStudio-Android-ARM32-v1.2.2%2B20.apk",
+      "apk_size": 25855427,
+      "apk_name": "DevStudio-Android-ARM32-v1.2.2+20.apk"
     }
   ]
 }
